@@ -46,7 +46,8 @@ class CreditCardview extends React.Component {
 
             this.setState({ cardNumber: "################" })
         }
-        else if (e.target.name === 'card_number' && e.target.value.length !== 0) {
+       
+        else if (e.target.name === 'card_number' && e.target.value.length !== 0 && e.target.value.length <17) {
             var visacardno = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
             var masterPattern = /^(?:5[1-5][0-9]{14})$/;
             var amexPattern = /^(?:3[47][0-9]{13})$/;
@@ -161,9 +162,11 @@ class CreditCardview extends React.Component {
                 this.setState({ cvv: e.target.value })
             }
         }
+    }
 
-
-
+    handleSubmit=()=>{
+        console.log("hry")
+        alert("Data submittted successfully!");
     }
 
     render() {
@@ -176,9 +179,8 @@ class CreditCardview extends React.Component {
                         <Grid item xs={12} md={6} sm={4} className="flip-card" >
 
                             <Card>
-                                <Card style={{ height: '98px' }}>
-                                </Card>
-                                <CardContent style={{ marginTop: '-115px', width: '70%', marginLeft: '75px' }}>
+                               
+                                <CardContent style={{  width: '70%', marginLeft: '75px' }}>
                                     {this.state.cvv === "" && <Grid container className="credit_card_header " justify="space-between">
                                         <Grid item >
                                             <img src={chip} alt="" className="chipSize" />
@@ -221,13 +223,13 @@ class CreditCardview extends React.Component {
                                         <Grid container justify="space-between">
                                             <Grid item>
                                                 {this.state.cardHolder === '' && <InputLabel style={{ color: 'white', marginLeft: '30px' }}>FULL NAME</InputLabel>}
-                                                {this.state.cardHolder !== '' && <InputLabel style={{ color: 'white', marginLeft: '30px' }}>{this.state.cardHolder}</InputLabel>}
+                                                {this.state.cardHolder !== '' && <InputLabel id="#outlined-basic-card_holder"style={{ color: 'white', marginLeft: '30px' }}>{this.state.cardHolder && this.state.cardHolder.toString().toUpperCase()}</InputLabel>}
 
                                             </Grid>
                                             <Grid item>
 
 
-                                                <InputLabel style={{ color: 'white', marginRight: '30px' }}>{this.state.month === '' ? 'MM' : (this.state.month)}/{this.state.year === '' ? 'YY' : this.state.year}</InputLabel>
+                                                <InputLabel style={{ color: 'white', marginRight: '30px' }}>{this.state.month === '' ? 'MM' : (this.state.month)}/{this.state.year === '' ? 'YY' : (this.state.year && this.state.year.substring(2, 4))}</InputLabel>
 
                                             </Grid>
                                         </Grid>
@@ -241,7 +243,7 @@ class CreditCardview extends React.Component {
                                             <img src={blackStrip} alt="" className="blackStrip" />
                                         </Grid>
                                         <Grid item >
-                                            <input name="cvv" id="outlined-basic" variant="outlined" style={{ marginLeft: '20px', width: '323%', height: '40px', backgroundColor: 'white' }}
+                                            <input name="cvv" id="outlined-basic" variant="outlined" style={{ marginLeft: '20px', width: '230%', height: '40px', backgroundColor: 'white',textAlign:'right' }}
                                                 value="***"
                                             />
                                         </Grid>
@@ -267,7 +269,7 @@ class CreditCardview extends React.Component {
                                     <Grid container  >
                                         <Grid item xs={12} md={12} sm={12} >
                                             <InputLabel><p style={{ textAlign: 'left' }}>Card Holders</p></InputLabel>
-                                            <TextField name="card_holder" id="outlined-basic" variant="outlined" style={{ width: '98%' }}
+                                            <TextField name="card_holder" id="outlined-basic-card_holder" variant="outlined" style={{ width: '98%' }}
                                                 onChange={(e) => { this.handleChange(e) }} />
                                         </Grid>
 
@@ -336,7 +338,7 @@ class CreditCardview extends React.Component {
 
                                 <CardActionArea style={{ marginLeft: '0px', marginBottom: '30px' }}>
 
-                                    <Button variant="contained" color="primary" className="buttonWidth">Submit</Button>
+                                    <Button variant="contained" color="primary" className="buttonWidth" onClick={()=>this.handleSubmit()}>Submit</Button>
                                 </CardActionArea>
                             </Card>
 
