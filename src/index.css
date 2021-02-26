@@ -11,3 +11,162 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main_container{
+height: 400px;
+margin-top: 90px;
+}
+
+.credit_card_header{
+  background-image: url("assets/images/6.jpeg");
+  height:250px;
+  border-radius: 10px;
+  /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+}
+
+.cardIconClasses{
+
+}
+
+.MuiOutlinedInput-input {
+  padding: 18.5px 110px;
+}
+
+
+.MuiSelect-outlined.MuiSelect-outlined {
+  padding-right: 80px !important;
+}
+
+.buttonWidth{
+  width:93%;
+}
+
+.chipSize{
+  margin:30px
+}
+
+.visaSize{
+  height: 55px;
+  width:55px;
+  margin:37px;
+}
+
+.visaBackSize{
+  height: 55px;
+  width:55px;
+}
+
+.hash{
+  color:white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.hashContainer{
+  margin-top:-50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.slide {
+/*   
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg); */
+  transform: rotateY(180deg);
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.blackStrip{
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  font-weight: 600;
+  color: #353239;
+}
+
+h1 span span {
+  color: tomato;
+  position: relative;
+  bottom: -1em;
+  opacity: 0;
+  animation: move-text 0.75s forwards;
+}
+h1 span span:nth-child(2n) { color: lightseagreen; }
+h1 span span:nth-child(3n) { color: orange; }
+h1 span span:nth-child(4n) { color: dodgerblue; }
+h1 span span:nth-child(5n) { color: blueviolet; }
+
+@keyframes move-text {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
+  }
+  
+  50% {
+    bottom: 0.2em;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    transform: scale(0.75);
+  }
+}
