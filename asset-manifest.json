@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/creditCard_Assignment/static/css/main.8106a91b.chunk.css",
-    "main.js": "/creditCard_Assignment/static/js/main.8555e4df.chunk.js",
-    "main.js.map": "/creditCard_Assignment/static/js/main.8555e4df.chunk.js.map",
-    "runtime-main.js": "/creditCard_Assignment/static/js/runtime-main.7eaf61c0.js",
-    "runtime-main.js.map": "/creditCard_Assignment/static/js/runtime-main.7eaf61c0.js.map",
-    "static/js/2.5db1b0bc.chunk.js": "/creditCard_Assignment/static/js/2.5db1b0bc.chunk.js",
-    "static/js/2.5db1b0bc.chunk.js.map": "/creditCard_Assignment/static/js/2.5db1b0bc.chunk.js.map",
-    "static/js/3.d2b00e49.chunk.js": "/creditCard_Assignment/static/js/3.d2b00e49.chunk.js",
-    "static/js/3.d2b00e49.chunk.js.map": "/creditCard_Assignment/static/js/3.d2b00e49.chunk.js.map",
-    "index.html": "/creditCard_Assignment/index.html",
-    "static/css/main.8106a91b.chunk.css.map": "/creditCard_Assignment/static/css/main.8106a91b.chunk.css.map",
-    "static/js/2.5db1b0bc.chunk.js.LICENSE.txt": "/creditCard_Assignment/static/js/2.5db1b0bc.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/creditCard_Assignment/static/media/6.f66f83c2.jpeg",
-    "static/media/blackStrip.de63318d.jpeg": "/creditCard_Assignment/static/media/blackStrip.de63318d.jpeg",
-    "static/media/chip.f88a902d.png": "/creditCard_Assignment/static/media/chip.f88a902d.png",
-    "static/media/discover.3dde2fd5.png": "/creditCard_Assignment/static/media/discover.3dde2fd5.png",
-    "static/media/jcb.23c6093d.png": "/creditCard_Assignment/static/media/jcb.23c6093d.png",
-    "static/media/logo.6ce24c58.svg": "/creditCard_Assignment/static/media/logo.6ce24c58.svg",
-    "static/media/mastercard.fdd172ae.png": "/creditCard_Assignment/static/media/mastercard.fdd172ae.png",
-    "static/media/unionpay.5c3adaa8.png": "/creditCard_Assignment/static/media/unionpay.5c3adaa8.png"
+    "main.css": "/creditCardAssignment/static/css/main.1fd0e93b.chunk.css",
+    "main.js": "/creditCardAssignment/static/js/main.59405dcb.chunk.js",
+    "main.js.map": "/creditCardAssignment/static/js/main.59405dcb.chunk.js.map",
+    "runtime-main.js": "/creditCardAssignment/static/js/runtime-main.8a083959.js",
+    "runtime-main.js.map": "/creditCardAssignment/static/js/runtime-main.8a083959.js.map",
+    "static/js/2.5db1b0bc.chunk.js": "/creditCardAssignment/static/js/2.5db1b0bc.chunk.js",
+    "static/js/2.5db1b0bc.chunk.js.map": "/creditCardAssignment/static/js/2.5db1b0bc.chunk.js.map",
+    "static/js/3.d2b00e49.chunk.js": "/creditCardAssignment/static/js/3.d2b00e49.chunk.js",
+    "static/js/3.d2b00e49.chunk.js.map": "/creditCardAssignment/static/js/3.d2b00e49.chunk.js.map",
+    "index.html": "/creditCardAssignment/index.html",
+    "static/css/main.1fd0e93b.chunk.css.map": "/creditCardAssignment/static/css/main.1fd0e93b.chunk.css.map",
+    "static/js/2.5db1b0bc.chunk.js.LICENSE.txt": "/creditCardAssignment/static/js/2.5db1b0bc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/creditCardAssignment/static/media/6.f66f83c2.jpeg",
+    "static/media/blackStrip.de63318d.jpeg": "/creditCardAssignment/static/media/blackStrip.de63318d.jpeg",
+    "static/media/chip.f88a902d.png": "/creditCardAssignment/static/media/chip.f88a902d.png",
+    "static/media/discover.3dde2fd5.png": "/creditCardAssignment/static/media/discover.3dde2fd5.png",
+    "static/media/jcb.23c6093d.png": "/creditCardAssignment/static/media/jcb.23c6093d.png",
+    "static/media/logo.6ce24c58.svg": "/creditCardAssignment/static/media/logo.6ce24c58.svg",
+    "static/media/mastercard.fdd172ae.png": "/creditCardAssignment/static/media/mastercard.fdd172ae.png",
+    "static/media/unionpay.5c3adaa8.png": "/creditCardAssignment/static/media/unionpay.5c3adaa8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7eaf61c0.js",
+    "static/js/runtime-main.8a083959.js",
     "static/js/2.5db1b0bc.chunk.js",
-    "static/css/main.8106a91b.chunk.css",
-    "static/js/main.8555e4df.chunk.js"
+    "static/css/main.1fd0e93b.chunk.css",
+    "static/js/main.59405dcb.chunk.js"
   ]
 }
