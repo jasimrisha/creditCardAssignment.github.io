@@ -3,7 +3,6 @@ import Card from "@material-ui/core/Card"
 import Grid from "@material-ui/core/Grid"
 import TextField from "@material-ui/core/TextField"
 import InputAdornment from '@material-ui/core/InputAdornment';
-import cardLogo from "./assets/images/visaCard.png"
 import { CardActionArea, CardHeader, TextareaAutosize } from "@material-ui/core";
 import { CardMedia, CardContent, Select, FormControl, Button } from "@material-ui/core";
 import { InputLabel } from '@material-ui/core';
